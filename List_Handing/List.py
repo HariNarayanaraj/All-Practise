@@ -29,8 +29,8 @@ class List:
 
     # divide by 10
     def divbyten(self):
-        # a = 10
-        # list1[:] = [x / a for x in list1]
+        a = 10
+        list1[:] = [x / a for x in list1]
         print("divide by 10 for list ", list1)
 
     def add(self):
@@ -47,9 +47,6 @@ class List:
         list1.pop(-1)
         print("remove value in last element list ", list1)
 
-        # list1.clear()
-        # print("remove all value in list ", list1)
-
     def average(self):
         Average = sum(list1) / len(list1)
         print("Average value of list ", Average)
@@ -64,6 +61,10 @@ class List:
         evenlist = [x for x in list1 if x % 2 == 0]
         print("Even value of list ", evenlist)
 
+    def clear(self):
+        list1.clear()
+        print(list1)
+
 
 obj = List()
 obj.reverse()
@@ -75,3 +76,6 @@ obj.remove()
 obj.average()
 obj.odd()
 obj.even()
+obj.clear()
+
+
