@@ -74,6 +74,7 @@ class list1:
 
         res = remove_value(list1, 20)
         print(res)
+     
 
 
 list1 = list1()
